@@ -1,0 +1,108 @@
+body{
+	/*background: linear-gradient(to right, #7493FF, #0E1A42, #1448A9);*/
+	background-color: gray
+}
+
+/* ----- Cabecera -----*/
+.menuPrincipal{
+	height: 90px;
+}
+
+.logo{
+	height: 80px;
+	width: 80px;
+}
+
+.inicio{
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+.inicio:hover{
+	font-size: 22px;
+}
+
+/*----- Titulo: Incia Sesión ----*/
+.tituloPrincipal{
+    margin-top: 30px;
+}
+
+#titulo_1{
+    color: #ffff;
+    margin-left: 290px;
+}
+
+/*----- Formulario -----*/
+.formulario{
+    margin-top: 50px;
+    margin-left: 260px;
+}
+
+.p2{
+    color: #ffff;
+}
+
+.btn-ingresar{
+	background: #1560af;
+	color: white;
+	width: 25%;
+	padding: 5px;
+	font-size: 18px;
+}
+
+.btn-ingresar:hover{
+	width: 30%;
+	height: 45px;
+}
+
+.btn{
+	background-color: #71D56B;
+}
+
+.btn:hover{
+	width: 30%;
+	height: 45px;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: white;
+}
+
+
+.btn_registrate{
+	color: white;
+}
+
+/* ----- Iconos ----- */
+
+a .fab{
+	color: #fff;
+	font-size: 30px;
+	margin: 0 10px;
+}
+
+a .fab:hover{
+	width: 35px;
+	height: 35px;
+}
+
+.wht, .fcbk, .fa-instagram{
+	color:#ffff !important;
+    height: 25px;
+}
+
+/* ----- Mensaje de Error de Login -----*/
+.loginError{
+	font-size: 18px;
+	text-align: center;
+    margin-left: 450px;
+    width: 35%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f66060;
+    color: white;
+    border-radius: 3px;
+}
