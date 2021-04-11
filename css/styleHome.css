@@ -1,0 +1,50 @@
+body{
+	/*background: linear-gradient(to right, #7493FF, #0E1A42, #1448A9);*/
+	background: linear-gradient(to right, #1448A9, #983228, #1448A9);
+}
+
+/* ----- Cabecera -----*/
+.menuPrincipal{
+	height: 90px;
+	color: white;
+}
+
+.logo{
+	height: 70px;
+	width: 70px;
+	margin-left: 10px;
+}
+
+.home{
+	margin-left: 30px;
+	color: white;
+}
+
+.teams{
+	color: white;
+}
+
+.juega{
+	color: white;
+}
+
+.menuDesplegable:hover{
+	background-color: #2e4053;
+}
+
+.iniciar{
+	margin-left: 800px;
+	color: white;
+}
+/* ---- Luego de Iniciar Cesión ---- */
+
+.nombre_usuario{
+	margin-left: 800px;
+}
+
+.foto_usuario{
+	width: 35px;
+	height: 35px;
+	margin-top: 6px;
+	margin-left: 7px;
+}

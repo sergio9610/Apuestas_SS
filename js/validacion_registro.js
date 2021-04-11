@@ -11,7 +11,7 @@ function validar(){
 	terminos = document.getElementById("terminos").checked;
 
 	exp_correo = /\w+@\w+\.+[a-z]/;
-    exp_apellidos = /[a-z]+\s+[a-z]/;
+    exp_apellidos = /[a-z]+\s+[a-z]+$/;
 
 	if(nombre === "" || apellidos === "" || correo === "" || usuario === "" || password === "" || password2 === ""){
 		alert("Todos los campos son obligatorios");

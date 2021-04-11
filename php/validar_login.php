@@ -5,14 +5,16 @@
 session_start();
 
   require 'database.php';
-  //echo "usuario:".$_POST['usuario'];
+  
   if (!empty($_POST['usuario']) && !empty($_POST['password'])) {
     $conn = conexionSQL();
-    $q = "SELECT * FROM usuario WHERE usuario = '".$_POST['usuario']."'";
+    $q = "SELECT id, usuario, contrasena FROM usuario WHERE usuario = '".$_POST['usuario']."'";
     $var = $conn->query($q);
     $results = $var->fetch_assoc();
     
-    if (count($results) > 0 && password_verify($_POST['password'], $results['contrasena'])) {
+    if (!empty($results) && password_verify($_POST['password'], $results['contrasena'])) {
+      $_SESSION['user_id'] = $results['id'];
+	    $_SESSION['usuario'] = $_POST['usuario'];
       header("Location: home.php");
     }
 	else{
